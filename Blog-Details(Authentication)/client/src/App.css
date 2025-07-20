@@ -1,0 +1,99 @@
+/* Custom Navbar */
+.custom-navbar {
+    background-color: #002142;
+    /* Dark navy shade */
+    padding: 0.75rem 0;
+    transition: all 0.3s ease;
+}
+
+/* Brand Text with highlight color */
+.brand-highlight {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #f3cc30 !important;
+}
+
+/* Navigation Link Style */
+.nav-link-style {
+    font-weight: 500;
+    color: #ffffff !important;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+
+.nav-link-style::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #f3cc30;
+    transition: width 0.3s;
+}
+
+.nav-link-style:hover::after {
+    width: 100%;
+}
+
+.nav-link-style:hover {
+    color: #f3cc30 !important;
+}
+
+/* 🔻 Custom Footer Styling */
+.footer-custom {
+    background: rgba(0, 33, 66, 0.8);
+    /* Deep navy with slight transparency */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Brand in footer */
+.footer-brand {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #f3cc30;
+    text-shadow: 0 0 5px rgba(243, 204, 48, 0.4);
+}
+
+/* Tagline under brand */
+.footer-tagline {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #ffffffcc;
+}
+
+/* Footer navigation links */
+.footer-link {
+    font-weight: 500;
+    color: #f3cc30;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.footer-link::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f3cc30;
+    transition: width 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
